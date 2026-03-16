@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Advanced PCF Simulation</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="js/simulation.js"></script>
+
+</head>
+
+<body>
+
+<header>
+<h1>Photonic Crystal Fiber Simulator</h1>
+</header>
+
+<section class="simulator">
+
+<div class="controls">
+
+<h2>Simulation Controls</h2>
+
+<label>Air Hole Diameter</label>
+<input type="range" id="diameter" min="2" max="12" value="6" oninput="drawFiber()">
+
+<label>Pitch (Spacing)</label>
+<input type="range" id="pitch" min="20" max="60" value="35" oninput="drawFiber()">
+
+<label>Wavelength</label>
+<input type="range" id="wave" min="400" max="1600" value="800" oninput="drawFiber()">
+
+<button class="btn3d" onclick="drawFiber()">
+Run Simulation
+</button>
+
+</div>
+
+<div class="canvasBox">
+
+<canvas id="fiberCanvas" width="600" height="600"></canvas>
+
+</div>
+
+</section>
+
+</body>
+</html>
